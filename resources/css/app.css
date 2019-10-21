@@ -1,0 +1,358 @@
+body.full-screen {
+	padding: 0 !important;
+}
+
+body.color-scheme-dark:before,
+.content-panel.color-scheme-dark:before {
+	background: none;
+}
+
+body.color-scheme-dark
+	.onboarding-modal
+	.onboarding-content
+	.onboarding-text
+	.table-lightfont
+	td,
+.dashboard-menu .btn:hover {
+	color: #ffffff;
+}
+
+body.color-scheme-dark .bootstrap-select .dropdown-toggle {
+	background-color: rgba(18, 22, 41, 0.11);
+	border-color: rgba(18, 22, 41, 0.17);
+	color: #ccd9e8;
+	line-height: 1.5;
+}
+
+body.color-scheme-dark .bootstrap-select .dropdown-menu,
+body.color-scheme-dark option {
+	background: #292b2c;
+}
+
+body.color-scheme-dark .dropdown-item,
+body.color-scheme-dark option,
+.color-scheme-dark .dropdown-item {
+	color: #ccd9e8;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+	color: #ffffff !important;
+	text-decoration: none;
+	background-image: var(--gradient-primary);
+}
+
+.flow-visible .slick-list {
+	overflow-y: visible;
+}
+
+.all-wrapper table.dataTable.table-boxedrow,
+table.table-boxedrow {
+	border-collapse: separate !important;
+	border-spacing: 0 10px;
+}
+
+body:not(.color-scheme-dark) .table-boxedrow tbody tr {
+	background-color: #ffffff;
+}
+
+body.color-scheme-dark .table-boxedrow tbody tr {
+	background-color: rgba(18, 22, 41, 0.52);
+}
+
+.table-boxedrow tbody tr td {
+	border: none;
+}
+
+.table-bookinglist.table-boxedrow tbody tr td {
+	padding: 5px;
+}
+
+.table-boxedrow thead th {
+	border-bottom: 1px solid #ff8d00 !important;
+}
+
+.table-boxedrow.table-hover tbody tr:hover {
+	background-image: var(--gradient-primary);
+}
+
+.table-hover tbody td:not(.action-cell) {
+	cursor: pointer;
+}
+
+.menu-w.sub-menu-style-over .sub-menu-w .sub-menu-i > ul > li > a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.table tfoot th,
+.table thead th,
+.menu-w .logged-user-menu .logged-user-info-w .logged-user-name,
+.menu-w .logo-w .logo-label,
+.top-bar .logo-w .logo-label,
+.breadcrumb li,
+.btn {
+	font-family: var(--font-family-heading);
+	font-weight: bold;
+}
+
+.menu-w .logo-w .logo-label,
+.top-bar .logo-w .logo-label {
+	font-size: 1rem;
+}
+
+.table-bookinglist tfoot th,
+.table-bookinglist thead th {
+	font-size: 0.65rem;
+}
+
+.breadcrumb li,
+.table-bookinglist td {
+	font-size: 0.8rem;
+}
+
+.table tfoot th,
+.table thead th {
+	font-size: 0.9rem;
+}
+
+.dataTables_wrapper .table-bookinglist .row:last-child,
+.table-bookinglist .row {
+	border: none !important;
+}
+
+body.color-scheme-dark .table thead th,
+.content-panel.color-scheme-dark .table thead th,
+body.color-scheme-dark .table-boxedrow a.dropdown-toggle,
+.table-boxedrow.table-hover tbody tr:hover {
+	color: #fff;
+}
+
+.table-whitefont {
+	color: #ccd9e8;
+}
+
+.swal2-title {
+	color: #595959 !important;
+}
+
+.menu-w.sub-menu-style-over .sub-menu-w .sub-menu-i > ul > li.sub-item > a {
+	color: rgba(255, 255, 192, 0.8);
+}
+
+.menu-position-top.menu-w.selected-menu-color-bright
+	ul.main-menu
+	> li.selected
+	.sub-menu-w
+	.sub-menu-i
+	ul.sub-menu
+	li.sub-item
+	a,
+.dropdown-toggle.no-arrow:before,
+.dropdown-toggle.no-arrow:after,
+.table-no-header thead {
+	display: none;
+}
+
+.header-button .btn,
+.form-group label {
+	text-transform: uppercase;
+}
+
+.form-header small.subtitle,
+body.color-scheme-dark .text-orange,
+.text-orange,
+.menu-w.color-scheme-dark .logo-w .text-orange {
+	color: var(--orange);
+}
+
+body.color-scheme-dark .dropdown-menu .form-control {
+	background-color: #ffffff;
+	border-color: rgba(18, 22, 41, 0.34);
+	color: #495057;
+}
+
+th.sorting:after,
+.filter-option-inner-inner {
+	font-weight: 400;
+}
+
+.btn:not([class*="btn-sm"]) {
+	border: none;
+	padding: 8px 14px;
+}
+
+.btn i.fa {
+	margin-right: 0.6em;
+	font-weight: normal;
+}
+
+.btn-orange {
+	color: #ffffff;
+	background-color: var(--orange);
+	border-color: var(--orange);
+}
+
+.btn-orange:hover {
+	color: #292b2c;
+	background-color: #f9da7b;
+	border-color: #f9d66f;
+}
+
+.btn-orange:focus,
+.btn-orange.focus {
+	-webkit-box-shadow: 0 0 0 0.2rem rgba(251, 228, 160, 0.5);
+	box-shadow: 0 0 0 0.2rem rgba(251, 228, 160, 0.5);
+}
+
+.btn-orange.disabled,
+.btn-orange:disabled {
+	color: #292b2c;
+	background-color: var(--orange);
+	border-color: var(--orange);
+}
+
+.btn-orange:not(:disabled):not(.disabled):active,
+.btn-orange:not(:disabled):not(.disabled).active,
+.show > .btn-orange.dropdown-toggle {
+	color: #292b2c;
+	background-color: #f9d66f;
+	border-color: #f8d363;
+}
+
+.btn-orange:not(:disabled):not(.disabled):active:focus,
+.btn-orange:not(:disabled):not(.disabled).active:focus,
+.show > .btn-orange.dropdown-toggle:focus {
+	-webkit-box-shadow: 0 0 0 0.2rem rgba(251, 228, 160, 0.5);
+	box-shadow: 0 0 0 0.2rem rgba(251, 228, 160, 0.5);
+}
+
+.step .step-outer {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+.step .step-outer .step-inner {
+	background-color: #fff;
+	border: var(--blue) 2px solid;
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+}
+
+.step-inner .step-icon {
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+	width: 100%;
+}
+
+.step-inner .check {
+	opacity: 0;
+	color: var(--orange);
+	border-radius: 50%;
+}
+
+.step .step-done .step-outer {
+	border: var(--orange) 3px solid;
+}
+
+.step .step-done .check {
+	opacity: 1;
+	background: rgba(255, 255, 255, 0.6);
+}
+
+.step .step-done h6,
+.text-orange {
+	color: var(--orange);
+}
+
+.modal-backdrop {
+	background-color: white;
+}
+
+.modal-xl {
+	max-width: 90%;
+	width: auto;
+}
+
+.dashboard-subtitle {
+	font-weight: 400;
+}
+
+.dashboard-menu {
+	width: 160px;
+	max-width: 160px;
+	height: 160px;
+}
+
+.dashboard-menu .btn:hover {
+	background: var(--gradient-orange);
+	border: none;
+}
+
+svg {
+	width: 100%;
+	max-height: 65%;
+}
+
+.dashboard-menu svg {
+	margin-bottom: 10px;
+}
+
+.dashboard-menu .btn:hover svg path {
+	fill: #ffffff !important;
+}
+
+.dashboard-menu .btn {
+	width: 100%;
+	height: 100%;
+}
+
+.dashboard-menu .btn img {
+	height: 75px;
+	margin: 15px 0 10px;
+}
+
+.fill {
+	min-height: 100%;
+	height: 100%;
+}
+
+.currency {
+	text-align: right;
+}
+
+.currency:before {
+	content: var(--symbol);
+	float: left;
+	padding-right: 4px;
+}
+
+.ps>.ps__scrollbar-x-rail,
+.ps>.ps__scrollbar-y-rail {
+	opacity: 0.6;
+	display: block;
+	background: transparent;
+	height: 300px;
+}
+
+.ps>.ps__scrollbar-x-rail,
+.ps>.ps__scrollbar-y-rail {
+	opacity: 0.6;
+	display: block;
+	background: transparent;
+	height: 300px;
+}
