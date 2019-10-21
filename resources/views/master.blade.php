@@ -24,17 +24,12 @@
 	</header>
 	<hr/>
 
-    <div class="container">
+    <div class="container-fluid">
     
         @yield('konten')
 
     </div>
 
-	<hr/>
-	<footer>
-        <nav class="navbar navbar-light" style="background-color: #53c9b2;">
-            <p>Assalamualaikum</p>
-        </nav>
-	</footer>
+    <hr/>
 </body>
 </html>

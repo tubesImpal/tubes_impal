@@ -59,18 +59,20 @@
                     <div class="form-group" style="margin-top: 20px">
                            <input type="email" name="email" class="form-control" placeholder="Email">
                     <!--  //Email -->
-                 
+                    <br>
         
                      <!-- // Password -->
                     <div class="form-group">           
                         <input type="password" name="password" class="form-control" placeholder="Password"> 
                      <!-- //Password -->
-        
+                    <br>
                      <!-- // Submit Button -->
                       <button type="submit" class="btn btn-primary btn lg">Submit</button>
                      <!-- // Submit -->
+                    <br>
+                    <br>
+                     <a href="{{ url('regist') }}" class="text-secondary">Belum punya akun ? Daftar Sekarang</a>
             </form>
-            </div>
+        </div>
     </div>
-
 @endsection

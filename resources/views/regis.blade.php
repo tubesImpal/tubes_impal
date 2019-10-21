@@ -27,13 +27,11 @@
 </head>
 <body>
 <div class="container">
- 		
  			<div class="row">
- 				
  					<div class="col-lg-3 "></div>
  					<div class="col-lg-6 border-box" id="kotak">
  						<div id="ui">
- 							<form method="POST" action="{{ url('/register') }}">
+ 							<form method="POST" action="{{ url('regist/proses') }}">
  							<h3 class="text-center tittle-login"> SIGN UP </h3>
  							{{csrf_field()}}
 
@@ -49,36 +47,36 @@
  								</div>
  							@endif
 
- 							<!--	//Email -->
+ 							<!--	//Nama -->
  								<div class="form-group" style="margin-top: 100px">
  	
- 										<label>Your Email</label>
- 										<input type="email" name="mail" class="form-control" placeholder="Masukkan Email Anda">
+ 										<label>Your Name</label>
+ 										<input type="text" name="nama_pasien" class="form-control" placeholder="Masukkan Nama Anda">
  									
  								</div>
- 							<!-- 	//Email -->
+ 							<!-- 	//Nama -->
  								
 
- 								<!-- // Password -->
+ 								<!-- //Email -->
  								<div class="form-group">
 
- 										<label>Your Password</label>
- 										<input type="password" name="pass" class="form-control" placeholder="Masukkan Password Anda">
+ 										<label>Your Email</label>
+ 										<input type="email" name="email_pasien" class="form-control" placeholder="Masukkan Email Anda">
 
  								</div>
- 								<!-- //Password -->
+ 								<!-- //Email -->
 
 
- 								<!-- // Full Name -->
+ 								<!-- // Password -->
 
  								<div class="form-group">
  										
- 										<label>Your Full Name</label>
- 										<input type="text" name="nama" class="form-control" placeholder="Masukkan Nama Lengkap Anda">
+ 										<label>Your Password</label>
+ 										<input type="password" name="pw_pasien" class="form-control" placeholder="Masukkan Password Anda">
 
  								</div>
 
- 								<!-- // Full Name -->
+ 								<!-- // Password -->
 
 
  								<!-- // Tanggal Lahir --> 
@@ -86,7 +84,7 @@
  								<div class="form-group">
 
  										<label>Tanggal Lahir</label>
- 										<input type="date" name="tgl" class="form-control">
+ 										<input type="date" name="tgl_lahir_pasien" class="form-control">
  									
  								</div>
 

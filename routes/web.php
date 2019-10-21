@@ -21,3 +21,5 @@ Route buat dashboard
 Route::get('dash', 'DashboardC@home');
 Route::get('dash/tentang', 'DashboardC@ab');
 Route::get('dash/faq', 'DashboardC@fa');
+Route::get('regist', 'RegisterC@v');
+Route::post('regist/proses','RegisterC@register');

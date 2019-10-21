@@ -3,26 +3,29 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Candidate;
-
-class RegistrasiController extends Controller
+use App\pasien;
+class RegisterC extends Controller
 {
-	
+	function v() {
+		return view('regis');
+	}
+
 	function register(Request $request)
 	{
 		$this->validate($request, [
-			'mail' => 'required',
-			'pass' => 'required',
-			'nama' => 'required',
-			'tgl' => 'required',
+			'nama_pasien' => 'required',
+			'email_pasien' => 'required',
+			'pw_pasien' => 'required',
+			'tgl_lahir_pasien' => 'required',
+
 		]);
 
-		$Candidate = new Candidate;
-		$Candidate->mail = $request->input('mail');
-		$Candidate->pass = $request->input('pass');
-		$Candidate->nama = $request->input('nama');
-		$Candidate->tgl = $request->input('tgl');
-		$Candidate->save();
-		return redirect('/')->with('response' , 'Register Berhasil');
+		$pasien = new pasien;
+		$pasien->nama_pasien = $request->input('nama_pasien');
+		$pasien->email_pasien = $request->input('email_pasien');
+		$pasien->pw_pasien = $request->input('pw_pasien');
+		$pasien->tgl_lahir_pasien = $request->input('tgl_lahir_pasien');
+		$pasien->save();
+		return redirect('/dash')->with('response' , 'Register Berhasil');
 	}
 }
