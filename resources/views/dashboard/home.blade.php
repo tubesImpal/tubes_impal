@@ -50,8 +50,27 @@
             </div>
         </div>
         <div class="col-4">
-            asdasdsadas
-        </div>
+            <form method="POST" action="{{ url('/login') }}">
+                <h3 class="text-center tittle-login">Login</h3>
+                <h3 class="text-center tittle-login"> Silakan masuk ke dalam akun kamu </h3>
+                {{csrf_field()}}      
+        
+                    <!-- //Email -->
+                    <div class="form-group" style="margin-top: 20px">
+                           <input type="email" name="email" class="form-control" placeholder="Email">
+                    <!--  //Email -->
+                 
+        
+                     <!-- // Password -->
+                    <div class="form-group">           
+                        <input type="password" name="password" class="form-control" placeholder="Password"> 
+                     <!-- //Password -->
+        
+                     <!-- // Submit Button -->
+                      <button type="submit" class="btn btn-primary btn lg">Submit</button>
+                     <!-- // Submit -->
+            </form>
+            </div>
     </div>
 
 @endsection
